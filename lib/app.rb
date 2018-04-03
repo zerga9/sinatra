@@ -1,7 +1,8 @@
 require 'sinatra'
+set :session_secret, 'super secret'
 
 get '/' do
-  'Hi GADIZA'
+  'Hi Zerari'
 end
 
 get '/secret' do
@@ -10,4 +11,8 @@ end
 
 get '/secret3' do
   'Secret3'
+end
+
+get '/cat' do
+  erb(:index)
 end
